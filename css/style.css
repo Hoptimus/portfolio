@@ -437,9 +437,19 @@ h1, h2, h3, h4, h5, h6 {
 .skill-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     gap: 1rem;
+}
+
+.skill-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 1rem;
+    width: 100%;
 }
 
 .skill-icon {
@@ -457,8 +467,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-card h3 {
     font-size: 1.6rem;
-    border-bottom: 2px dashed var(--border-color);
-    padding-bottom: 0.5rem;
     width: 100%;
 }
 
@@ -586,8 +594,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .pub-info span, .cert-info span {
     font-family: var(--font-head);
+    font-size: 1.2rem;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.pub-summary {
     font-size: 1.1rem;
     color: var(--text-muted);
+    line-height: 1.5;
 }
 
 /* Contact */
