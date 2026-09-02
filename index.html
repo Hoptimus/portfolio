@@ -21,7 +21,7 @@
         <div class="nav-content">
             <a href="#home" class="logo">Hritam<span>Sarkar</span></a>
             <div class="nav-links">
-                <a href="#about">About</a>
+                <a href="#home">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
@@ -34,7 +34,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <a href="#about" class="mobile-link">About</a>
+        <a href="#home" class="mobile-link">About</a>
         <a href="#skills" class="mobile-link">Skills</a>
         <a href="#experience" class="mobile-link">Experience</a>
         <a href="#education" class="mobile-link">Education</a>
@@ -42,45 +42,52 @@
         <a href="#contact" class="mobile-link">Contact</a>
     </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="glitch" data-text="Hritam Sarkar">Hritam Sarkar</h1>
-            <h2 class="subtitle">Electronics & Communication Engineer</h2>
-            <p class="hero-desc">Bridging the gap between Hardware, AI, and Software</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View Work</a>
-                <a href="files/HRITAM%20SARKAR%20(3).pdf" class="btn btn-secondary" download>Download Resume <i class="fas fa-download"></i></a>
-            </div>
-        </div>
-        
-        <!-- Decorative Planet -->
-        <div class="planet planet-hero">
-            <div class="planet-ring"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text glass-card">
+    <!-- Hero / About Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-left glass-card">
+                <div class="hero-intro">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="name-title"><span class="highlight">Hritam Sarkar</span></h1>
+                    <h2 class="subtitle">Electronics & Communication Engineer</h2>
+                    <p class="tagline">Bridging the gap between Hardware, AI, and Software</p>
+                </div>
+                
+                <div class="about-text">
                     <p>I am an Electronics and Communication Engineer experienced in embedded systems, hardware, and networking. I am highly skilled in implementing innovative ideas bridging electronics and software.</p>
                     <p>Currently, I am pursuing an MCA with a focus on Artificial Intelligence, Machine Learning, microcontroller interfacing, and intelligent system design. I am recognized for analytical thinking, adaptability, and solution-orientated execution.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">4+</span>
-                            <span class="stat-text">Years Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">4</span>
-                            <span class="stat-text">Publications</span>
-                        </div>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="files/HRITAM%20SARKAR%20(3).pdf" class="btn btn-secondary" download>Download Resume <i class="fas fa-download"></i></a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-text">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-text">Publications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-text">Degrees</span>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="planet planet-about"></div>
+            </div>
+
+            <div class="hero-right">
+                <div class="profile-wrapper">
+                    <div class="planet-decoration"></div>
+                    <img src="files/Hritam_Sarkar.jpg" alt="Hritam Sarkar" class="profile-img-large glass-card">
+                    
+                    <div class="floating-badge">
+                        <span class="badge-number">ISRO</span>
+                        <span class="badge-text">Certified</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,100 +96,97 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <div class="skill-tags">
-                        <span>C</span><span>Java</span><span>Python</span><span>PHP</span>
-                        <span>JavaScript</span><span>HTML</span><span>CSS</span><span>R</span><span>MATLAB</span>
-                    </div>
+            <div class="section-header">
+                <span class="section-subtitle">MY EXPERTISE</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid-new">
+                <div class="skill-card glass-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <p>C, Java, Python, PHP, JavaScript, HTML, CSS, R, MATLAB</p>
                 </div>
                 
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-robot"></i> AI & Agent Platforms</h3>
-                    <div class="skill-tags">
-                        <span>Claude Code</span><span>Antigravity IDE</span><span>MCP Server</span>
-                    </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Platforms</h3>
+                    <p>Claude Code, Antigravity IDE, MCP Server</p>
                 </div>
 
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-microchip"></i> Embedded & Hardware</h3>
-                    <div class="skill-tags">
-                        <span>Microcontroller Programming</span><span>Circuit Design</span>
-                        <span>PCB Design</span><span>Computer Assembly</span><span>Maintenance</span>
-                    </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Embedded & Hardware</h3>
+                    <p>Microcontroller Programming, Circuit & PCB Design, Assembly & Maintenance</p>
                 </div>
 
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-tools"></i> Software & Tools</h3>
-                    <div class="skill-tags">
-                        <span>Microsoft Office</span><span>Photoshop</span><span>Canva</span>
-                        <span>Scilab</span><span>Octave</span><span>Audio/Video Editing</span>
-                    </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Software & Tools</h3>
+                    <p>Microsoft Office, Photoshop, Canva, Scilab, Octave, Video Editing</p>
                 </div>
 
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-satellite-dish"></i> Signal & Systems</h3>
-                    <div class="skill-tags">
-                        <span>Object Tracking</span><span>Signal Decoding</span>
-                    </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon"><i class="fas fa-satellite-dish"></i></div>
+                    <h3>Signal & Systems</h3>
+                    <p>Object Tracking and Decoding Signal Coming from Object.</p>
                 </div>
 
-                <div class="skill-category glass-card">
-                    <h3><i class="fas fa-plus"></i> Additional</h3>
-                    <div class="skill-tags">
-                        <span>Project Management</span><span>Responsive Web Design</span>
-                        <span>Remote Sensing (ISRO)</span>
-                    </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon"><i class="fas fa-plus"></i></div>
+                    <h3>Additional</h3>
+                    <p>Project Management, Responsive Web Design, Remote Sensing</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section">
+    <section id="experience" class="section bg-alt">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Aug 2022 - Oct 2023</span>
-                        <h3>Computer Hardware & Network Engineer</h3>
-                        <h4>Kore Infosystem, Kolkata</h4>
-                        <ul>
-                            <li>Diagnosed and repaired computer hardware issues across diverse client systems</li>
-                            <li>Configured and maintained LAN/WAN networks</li>
-                            <li>CCTV camera configuration with NVR/DVR and Wi-Fi Camera setup</li>
-                        </ul>
+            <div class="section-header">
+                <span class="section-subtitle">RESUME</span>
+                <h2 class="section-title">My Work Experience</h2>
+            </div>
+            
+            <div class="experience-grid">
+                <div class="exp-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-network-wired"></i></div>
+                        <span class="exp-date">Aug 2022 - Oct 2023</span>
                     </div>
+                    <h3>Computer Hardware & Network Engineer</h3>
+                    <h4>Kore Infosystem, Kolkata</h4>
+                    <ul>
+                        <li>Diagnosed and repaired computer hardware issues across diverse client systems</li>
+                        <li>Configured and maintained LAN/WAN networks</li>
+                        <li>CCTV camera configuration with NVR/DVR and Wi-Fi Camera setup</li>
+                    </ul>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Nov 2019 - May 2022</span>
-                        <h3>Computer Hardware Engineer</h3>
-                        <h4>Mobile Computer Repair Center, Siliguri</h4>
-                        <ul>
-                            <li>Performed mobile and desktop repair, upgrades, and optimization</li>
-                            <li>Built long-term client trust through reliable technical service</li>
-                        </ul>
+                <div class="exp-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-desktop"></i></div>
+                        <span class="exp-date">Nov 2019 - May 2022</span>
                     </div>
+                    <h3>Computer Hardware Engineer</h3>
+                    <h4>Mobile Computer Repair Center, Siliguri</h4>
+                    <ul>
+                        <li>Performed mobile and desktop repair, upgrades, and optimization</li>
+                        <li>Built long-term client trust through reliable technical service</li>
+                    </ul>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <span class="timeline-date">Jul 2019 - Nov 2019</span>
-                        <h3>Operation Maintenance Control Remote Executive</h3>
-                        <h4>Technocon Services, Siliguri</h4>
-                        <ul>
-                            <li>Telephone and mobile tower monitored and controlled remote operations and maintenance systems</li>
-                            <li>Create management system with technician and higher authorities to maintain the phone tower</li>
-                        </ul>
+                <div class="exp-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-satellite"></i></div>
+                        <span class="exp-date">Jul 2019 - Nov 2019</span>
                     </div>
+                    <h3>Operation Maintenance Control Remote Executive</h3>
+                    <h4>Technocon Services, Siliguri</h4>
+                    <ul>
+                        <li>Telephone and mobile tower monitored and controlled remote operations</li>
+                        <li>Create management system with technician and higher authorities</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -191,7 +195,10 @@
     <!-- Education Section -->
     <section id="education" class="section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <div class="section-header">
+                <span class="section-subtitle">ACADEMICS</span>
+                <h2 class="section-title">Education</h2>
+            </div>
             <div class="education-grid">
                 <div class="edu-card glass-card">
                     <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
@@ -214,33 +221,35 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section bg-alt">
         <div class="container">
-            <h2 class="section-title">Key Projects</h2>
+            <div class="section-header">
+                <span class="section-subtitle">PORTFOLIO</span>
+                <h2 class="section-title">Selected Work</h2>
+            </div>
             <div class="projects-grid">
                 <div class="project-card glass-card">
                     <div class="project-content">
-                        <span class="project-label">MCA Final Year Project</span>
+                        <span class="project-label">Robotics & Vision</span>
                         <h3>HUNTER-K1</h3>
-                        <p>Wheel-based robotic arm with computer vision, object detection and AI integration.</p>
+                        <p>Wheel-based robotic arm with computer vision, object detection and AI integration. (MCA Final Year Project)</p>
                     </div>
                 </div>
 
                 <div class="project-card glass-card">
                     <div class="project-content">
-                        <span class="project-label">B.Tech Final Year Project</span>
+                        <span class="project-label">Hardware Control</span>
                         <h3>Gesture-Controlled Robotic Arm</h3>
-                        <p>Analog gesture control using LDR matrix.</p>
+                        <p>Analog gesture control using LDR matrix. (B.Tech Final Year Project)</p>
                     </div>
                 </div>
 
                 <div class="project-card glass-card">
                     <div class="project-content">
-                        <span class="project-label">AI & Vision</span>
+                        <span class="project-label">AI & CNN</span>
                         <h3>CNN Medical & Demographic Detection</h3>
                         <ul>
                             <li>Binary detection of eczema vs non-eczema (CNN)</li>
-                            <li>Binary detection of Gender Classification (CNN)</li>
                             <li>Real-time Binary detection (Yolo) of Gender Classification using a CCTV</li>
                         </ul>
                     </div>
@@ -250,88 +259,66 @@
                     <div class="project-content">
                         <span class="project-label">Agentic AI</span>
                         <h3>Industrial Multi-Agent KAG System</h3>
-                        <p>Industrial Multi-Agent AI & Knowledge Augmented Generation (KAG) system that utilizes the Model Context Protocol (MCP) to manage a local AI environment.</p>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card">
-                    <div class="project-content">
-                        <span class="project-label">Hardware & Comms</span>
-                        <h3>Hardware & Signal Projects</h3>
-                        <ul>
-                            <li>Variable Speed Digital Clock using 555 Timer, Object Counter System</li>
-                            <li>Running Off-line and Off-grid messaging platform (Open Source)</li>
-                            <li>Tracking Satellite and Decoding Signal for Educational Purpose</li>
-                        </ul>
+                        <p>Multi-Agent AI & Knowledge Augmented Generation (KAG) system utilizing Model Context Protocol (MCP).</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Publications & Certifications Section -->
+    <!-- Publications & Certifications -->
     <section id="more" class="section">
         <div class="container">
             <div class="more-grid">
                 <div class="publications">
-                    <h2 class="section-title">Publications</h2>
+                    <div class="section-header align-left">
+                        <span class="section-subtitle">RESEARCH</span>
+                        <h2 class="section-title">Publications</h2>
+                    </div>
                     <div class="pub-list">
                         <div class="pub-item glass-card">
-                            <i class="fas fa-book"></i>
+                            <div class="pub-icon"><i class="fas fa-book"></i></div>
                             <div class="pub-info">
                                 <h4>Home-Based and Portable Smart Weather Station</h4>
                                 <span>IISRR (ISSN: 2394-885X)</span>
                             </div>
                         </div>
                         <div class="pub-item glass-card">
-                            <i class="fas fa-book"></i>
+                            <div class="pub-icon"><i class="fas fa-book"></i></div>
                             <div class="pub-info">
                                 <h4>Real-Time Monitoring of Radiant Flux and Surface Thermal Properties via Arduino Thermocouple</h4>
                                 <span>IJSR (ISSN: 2319-7064)</span>
                             </div>
                         </div>
                         <div class="pub-item glass-card">
-                            <i class="fas fa-book"></i>
+                            <div class="pub-icon"><i class="fas fa-book"></i></div>
                             <div class="pub-info">
-                                <h4>Real-Time Wireless Sound Localisation and Frequency Analysis: A Low-Latency IoT Approach</h4>
+                                <h4>Real-Time Wireless Sound Localisation and Frequency Analysis</h4>
                                 <span>IJSR (ISSN: 2319-7064)</span>
-                            </div>
-                        </div>
-                        <div class="pub-item glass-card">
-                            <i class="fas fa-book"></i>
-                            <div class="pub-info">
-                                <h4>Real-Time Weather Monitoring Using NodeMCU for Diverse Application</h4>
-                                <span>IIP (ISSN: 3070-7617)</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="certifications">
-                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-header align-left">
+                        <span class="section-subtitle">TRAINING</span>
+                        <h2 class="section-title">Certifications</h2>
+                    </div>
                     <div class="cert-list">
                         <div class="cert-item glass-card">
-                            <i class="fas fa-certificate"></i>
+                            <div class="pub-icon"><i class="fas fa-certificate"></i></div>
                             <div class="cert-info">
                                 <h4>Remote Sensing and Digital Image Analysis</h4>
                                 <span>ISRO</span>
                             </div>
                         </div>
                         <div class="cert-item glass-card">
-                            <i class="fas fa-broadcast-tower"></i>
+                            <div class="pub-icon"><i class="fas fa-broadcast-tower"></i></div>
                             <div class="cert-info">
                                 <h4>Radio Broadcasting and AM/FM transmission</h4>
                                 <span>All India Radio (AKASHVANI)</span>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <h2 class="section-title" style="margin-top: 3rem;">Websites</h2>
-                    <div class="cert-item glass-card">
-                        <i class="fas fa-globe"></i>
-                        <div class="cert-info">
-                            <h4>Solaris Space Weather OPS</h4>
-                            <p>Multi-Agent AI Based Space Weather Monitoring System</p>
                         </div>
                     </div>
                 </div>
@@ -340,9 +327,13 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-alt">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-subtitle">STAY CONNECTED</span>
+                <h2 class="section-title">Let's Work Together!</h2>
+            </div>
+            
             <div class="contact-card glass-card">
                 <div class="contact-info">
                     <div class="contact-item">
