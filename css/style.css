@@ -427,47 +427,83 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-/* Skills Grid (New) */
-.skills-grid-new {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+/* Skills List Layout (Descriptive) */
+.skills-list-container {
+    display: flex;
+    gap: 4rem;
+    padding: 3rem;
+    text-align: left;
 }
 
-.skill-card {
+.skills-column {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    gap: 3rem;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
-.skill-header {
+.category-header {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
     border-bottom: 2px dashed var(--border-color);
-    padding-bottom: 1rem;
-    width: 100%;
+    padding-bottom: 0.5rem;
 }
 
-.skill-icon {
-    width: 60px;
-    height: 60px;
-    background: rgba(42, 76, 156, 0.1);
-    color: var(--primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.category-header i {
     font-size: 1.8rem;
-    border: 2px solid var(--primary);
+    color: var(--secondary);
+    background: rgba(184, 60, 46, 0.1);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
 }
 
-.skill-card h3 {
-    font-size: 1.6rem;
-    width: 100%;
+.category-header h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 0;
+}
+
+.skill-bullets {
+    list-style-type: none;
+    padding-left: 0.5rem;
+}
+
+.skill-bullets > li {
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-main);
+}
+
+.skill-bullets > li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.skill-bullets ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.skill-bullets ul li {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 0.3rem;
 }
 
 .skill-card p {
@@ -526,18 +562,37 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type: square;
 }
 
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
+/* Projects List Layout */
+.projects-list-container {
+    display: flex;
+    gap: 4rem;
+    padding: 3rem;
+    text-align: left;
 }
 
-.project-card {
-    height: 100%;
+.projects-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-.project-label {
+.project-category {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 0.8rem;
+}
+
+.project-badge {
     display: inline-block;
     padding: 0.2rem 0.8rem;
     background: var(--primary);
@@ -545,13 +600,48 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-head);
     font-size: 1.1rem;
     border-radius: 4px;
-    margin-bottom: 1rem;
     transform: rotate(-2deg);
 }
 
-.project-content h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+.project-header h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 0;
+}
+
+.project-bullets {
+    list-style-type: none;
+    padding-left: 0.5rem;
+}
+
+.project-bullets > li {
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-main);
+}
+
+.project-bullets > li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.project-bullets ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.project-bullets ul li {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 0.3rem;
 }
 
 /* Publications & Certifications */
@@ -626,8 +716,12 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.5rem;
 }
 
+.contact-info-left p {
+    font-size: 1.4rem;
+}
+
 .contact-info-left h3 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
@@ -651,17 +745,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-group label {
     font-family: var(--font-head);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: var(--primary);
 }
 
 .form-group input, .form-group textarea {
-    padding: 1rem;
+    padding: 1.2rem;
     border: 2px dashed var(--border-color);
     border-radius: 6px;
     background: rgba(253, 251, 247, 0.7);
     font-family: var(--font-body);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--text-main);
     transition: all 0.3s ease;
 }
@@ -677,7 +771,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .contact-item i {
@@ -718,6 +812,11 @@ footer {
     }
     .hero-right {
         order: -1;
+    }
+    .skills-list-container, .projects-list-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
     }
 }
 
