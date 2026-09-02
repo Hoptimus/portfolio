@@ -608,21 +608,74 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Contact */
 .contact-card {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
-    text-align: center;
 }
 
-.contact-info {
+.contact-content {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-info-left {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
+.contact-info-left h3 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-right {
+    flex: 1.5;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-family: var(--font-head);
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.form-group input, .form-group textarea {
+    padding: 1rem;
+    border: 2px dashed var(--border-color);
+    border-radius: 6px;
+    background: rgba(253, 251, 247, 0.7);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-style: solid;
+    background: #fff;
+    box-shadow: 3px 3px 0px rgba(42, 76, 156, 0.15);
+}
+
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
     font-size: 1.3rem;
 }

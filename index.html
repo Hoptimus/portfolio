@@ -353,22 +353,37 @@
             </div>
             
             <div class="contact-card glass-card">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Siliguri, West Bengal, India</span>
+                <div class="contact-content">
+                    <div class="contact-info-left">
+                        <h3>Let's Connect!</h3>
+                        <p>Feel free to reach out for collaborations, projects, or just to say hi.</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Siliguri, West Bengal, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Hoptimus" target="_blank" rel="noopener noreferrer">github.com/Hoptimus</a>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+916296429319">+91-6296429319</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:hritamsarkar@gmail.com">hritamsarkar@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/Hoptimus" target="_blank" rel="noopener noreferrer">github.com/Hoptimus</a>
+
+                    <div class="contact-form-right">
+                        <form action="https://formspree.io/f/mdeogdrv" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="How can I help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
