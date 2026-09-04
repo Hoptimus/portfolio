@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-header {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-header.align-left {
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-    padding: 5rem 0;
+    padding: 3rem 0;
     position: relative;
     z-index: 2;
 }
@@ -562,6 +562,61 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type: square;
 }
 
+/* Featured Project */
+.featured-project {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.featured-image {
+    flex: 1;
+}
+
+.featured-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 0px rgba(42, 76, 156, 0.2);
+}
+
+.featured-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.featured-content h3 {
+    font-size: 2.4rem;
+    color: var(--primary);
+}
+
+.featured-content h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.featured-content h3 a:hover {
+    color: var(--secondary);
+}
+
+.featured-content p {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
 /* Projects List Layout */
 .projects-list-container {
     display: flex;
@@ -813,7 +868,7 @@ footer {
     .hero-right {
         order: -1;
     }
-    .skills-list-container, .projects-list-container {
+    .skills-list-container, .projects-list-container, .featured-project {
         flex-direction: column;
         gap: 2rem;
         padding: 2rem;
